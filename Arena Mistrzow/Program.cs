@@ -1,3 +1,5 @@
+using Arena_Mistrzow;
+
 bool alive = true;
 
 Console.WriteLine("Gracz jeden wybierz klase postaci: ");
@@ -11,17 +13,22 @@ switch (wybór1)
 {
     case "1":
         Console.WriteLine("Wybrano Wojownika");
-        //Dodać wybór
+        Bohater.Wojownik wojownik = new Bohater.Wojownik();
         break;
     case "2":
         Console.WriteLine("Wybrano Łucznik");
-        //Dodać wybór
+        Bohater.Łucznik łucznik = new Bohater.Łucznik();
         break;
     case "3":
         Console.WriteLine("Wybrano Mag");
-        //Dodać wbór
+        Bohater.Mag mag = new Bohater.Mag();
+        
         break;
 }
+
+//dodaj nazwy i hp do poprzedniego
+//zrób drugiego gracza
+
 
 while (alive)
 {
