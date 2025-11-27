@@ -14,20 +14,25 @@ switch (wybór1)
     case "1":
         Console.WriteLine("Wybrano Wojownika");
         Bohater.Wojownik wojownik = new Bohater.Wojownik();
+        wojownik.Imie = "Wojownik";
+        wojownik.HP = 200;
         break;
     case "2":
         Console.WriteLine("Wybrano Łucznik");
         Bohater.Łucznik łucznik = new Bohater.Łucznik();
+        łucznik.Imie = "Łucznik";
+        łucznik.HP = 100;
         break;
     case "3":
         Console.WriteLine("Wybrano Mag");
         Bohater.Mag mag = new Bohater.Mag();
-        
+        mag.Imie = "Mag";
+        mag.HP = 80;
+
         break;
 }
 
-//dodaj nazwy i hp do poprzedniego
-//zrób drugiego gracza
+
 
 
 while (alive)
