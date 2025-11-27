@@ -1,5 +1,7 @@
 using Arena_Mistrzow;
 
+Random rnd = new Random();
+
 bool alive = true;
 
 Console.WriteLine("Gracz jeden wybierz klase postaci: ");
@@ -65,5 +67,8 @@ switch (wybór2)
 
 while (alive)
 {
-
+    void Walka(Bohater Gracz1, Bohater Gracz2)
+    {
+        Console.WriteLine($"Gracz 1 wybrał {Gracz1.Imie}");
+    }
 }

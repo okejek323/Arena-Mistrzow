@@ -1,8 +1,6 @@
 ﻿namespace Arena_Mistrzow
 {
-    internal class Bohater
-    {
-        public class Postac
+        public class Bohater
         {
             private string imie;
             private int hp;
@@ -20,22 +18,21 @@
             }
         }
 
-        public class Wojownik : Postac
-        {
+        public class Wojownik : Bohater
+    {
             private string? imie;
             private int hp;
         }
 
-        public class Łucznik : Postac
-        {
+        public class Łucznik : Bohater
+    {
             private string? imie;
             private int hp;
         }
 
-        public class Mag : Postac
-        {
+        public class Mag : Bohater
+    {
             private string? imie;
             private int hp;
         }
     }
-} 
