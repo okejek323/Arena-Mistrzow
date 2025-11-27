@@ -1,35 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Arena_Mistrzow
+﻿namespace Arena_Mistrzow
 {
     internal class Bohater
     {
-        class Postac
+        public class Postac
         {
             private string imie;
-            private int HP;
-            public string zmienne() 
+            private int hp;
+
+            public string Imie
             {
-                return "0";
+                get { return imie; }
+                set { imie = value; }
+            }
+
+            public int HP
+            {
+                get { return hp; }
+                set { hp = value; }
             }
         }
-        class Wojownik : Postac {
-            imie = "Wojownik";
-            private int HP;
-        }
-        class Łucznik : Postac
+
+        public class Wojownik : Postac
         {
-            imie = "Łucznik";
-            private int HP;
+            private string? imie;
+            private int hp;
         }
-        class Mag : Postac
+
+        public class Łucznik : Postac
         {
-            imie = "Mag";
-            private int HP;
+            private string? imie;
+            private int hp;
+        }
+
+        public class Mag : Postac
+        {
+            private string? imie;
+            private int hp;
         }
     }
-}
+} 
