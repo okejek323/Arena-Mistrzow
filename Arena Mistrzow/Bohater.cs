@@ -1,38 +1,45 @@
 ﻿namespace Arena_Mistrzow
 {
-        public class Bohater
+    public class Bohater
+    {
+        private string imie;
+        private int hp;
+        private int sila;
+        public string Imie
         {
-            private string imie;
-            private int hp;
+            get { return imie; }
+            set { imie = value; }
+        }       
 
-            public string Imie
-            {
-                get { return imie; }
-                set { imie = value; }
-            }
+        public int HP
+        {
+            get { return hp; }
+            set { hp = value; }
+        }    
 
-            public int HP
-            {
-                get { return hp; }
-                set { hp = value; }
-            }
-        }
-
-        public class Wojownik : Bohater
-    {
-            private string? imie;
-            private int hp;
-        }
-
-        public class Łucznik : Bohater
-    {
-            private string? imie;
-            private int hp;
-        }
-
-        public class Mag : Bohater
-    {
-            private string? imie;
-            private int hp;
+        public int Sila
+        {
+            get { return sila; }
+            set { sila = value; }
         }
     }
+
+    public class wojownik : Bohater
+    {
+        private string? imie;
+        private int hp;
+        private int sila;
+    }
+
+    public class łucznik : Bohater
+    {
+        private string? imie;
+        private int hp;
+    }
+
+    public class mag : Bohater
+    {
+        private string? imie;
+        private int hp;
+    }
+}
