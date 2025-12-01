@@ -96,4 +96,5 @@ Console.WriteLine($"Gracz 2 wybrał {Gracz2.Imie}");
 while (alive)
 {
     Walka(Gracz1, Gracz2);
+    alive = false;
 }
