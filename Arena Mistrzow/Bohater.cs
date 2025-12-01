@@ -5,6 +5,7 @@
         private string imie;
         private int hp;
         private int sila;
+
         public string Imie
         {
             get { return imie; }
@@ -22,14 +23,13 @@
             get { return sila; }
             set { sila = value; }
         }
-
-        }
-    public void obrazena(){
+    public void obrazena(Bohater cel)
+        {
             Random rnd = new Random();
             int dmg = Sila;
-            rnd.Next(0, 4)
-            .HP -= dmg;
-            Console.Writeline($"{imie} atakauje {dmg} dmg ");
+            rnd.Next(0, 4);
+            cel.HP -= dmg;
+            Console.WriteLine($"{cel.imie} atakauje {dmg} dmg {cel.imie} ma teraz {cel.HP}");
         }
     public class wojownik : Bohater
     {
