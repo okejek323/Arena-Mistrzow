@@ -23,12 +23,13 @@
             set { sila = value; }
         }
 
+        }
     public void obrazena(){
             Random rnd = new Random();
             int dmg = Sila;
-            rnd.Next(0, 4);
+            rnd.Next(0, 4)
             .HP -= dmg;
-            Console.Writeline($"{imie} atakauje {dmg} dmg");
+            Console.Writeline($"{imie} atakauje {dmg} dmg ");
         }
     public class wojownik : Bohater
     {
