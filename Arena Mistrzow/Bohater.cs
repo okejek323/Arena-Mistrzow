@@ -35,11 +35,13 @@
     {
         private string? imie;
         private int hp;
+        private int sila;
     }
 
     public class mag : Bohater
     {
         private string? imie;
         private int hp;
+        private int sila;
     }
 }
