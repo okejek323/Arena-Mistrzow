@@ -9,21 +9,27 @@
         {
             get { return imie; }
             set { imie = value; }
-        }       
+        }
 
         public int HP
         {
             get { return hp; }
             set { hp = value; }
-        }    
+        }
 
         public int Sila
         {
             get { return sila; }
             set { sila = value; }
         }
-    }
 
+    public void obrazena(){
+            Random rnd = new Random();
+            int dmg = Sila;
+            rnd.Next(0, 4);
+            .HP -= dmg;
+            Console.Writeline($"{imie} atakauje {dmg} dmg");
+        }
     public class wojownik : Bohater
     {
         private string? imie;
