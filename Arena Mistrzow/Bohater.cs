@@ -1,4 +1,6 @@
-﻿namespace Arena_Mistrzow
+﻿using System.Runtime.ConstrainedExecution;
+
+namespace Arena_Mistrzow
 {
     public class Bohater
     {
@@ -23,14 +25,26 @@
             get { return sila; }
             set { sila = value; }
         }
-    public void obrazena(Bohater cel)
+        public void Atak(Bohater cel)
         {
-            Random rnd = new Random();
             int dmg = Sila;
-            rnd.Next(0, 4);
             cel.HP -= dmg;
             Console.WriteLine($"{cel.imie} atakauje {dmg} dmg {cel.imie} ma teraz {cel.HP}");
+            if (cel.HP <= 0)
+            {
+                cel.HP = 0;
+                Console.WriteLine("Gracz został pokonany");
+            }
         }
+        public void Ulecz()
+        {
+            Random rnd = new Random();
+            int heal = rnd.Next(25, 51);
+            HP += heal;
+
+            Console.WriteLine($"{imie} leczy się o {heal} HP i ma teraz {HP} HP.");
+        }
+    }
     public class wojownik : Bohater
     {
         private string? imie;
